@@ -1,13 +1,13 @@
-import React from "react";
-import { useRouteData } from "react-static";
-import { Link } from "@reach/router";
-import { Post } from "T/index";
+import React from 'react';
+import { useRouteData } from 'react-static';
+import { Link } from '@reach/router';
+import { Post } from 'T/index';
 
 export default () => {
   const { post }: { post: Post } = useRouteData();
   return (
     <div>
-      <Link to="/blog/">{"<"} Back</Link>
+      <Link to="/blog/">{'<'} Back</Link>
       <br />
       <h3>{post.title}</h3>
       <p>{post.body}</p>

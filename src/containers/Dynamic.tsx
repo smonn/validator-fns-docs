@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type DF = React.FC<{ path?: String }>;
 const Dynamic: DF = () => (
