@@ -2,6 +2,7 @@
   --purple-400: #b362ff;
   --indigo-100: #ededf7;
   --indigo-700: #2d2a55;
+  --gray-900: #1a1a1a;
 }
 
 html {
@@ -54,4 +55,5 @@ main {
   margin: 0 auto;
   max-width: 960px;
   padding: 20px 20px 100px;
+  min-height: calc(100vh - 100px);
 }

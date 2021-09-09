@@ -1,0 +1,26 @@
+.root {
+  background-color: var(--gray-900);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.root > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.root > * + * {
+  margin-top: 10px;
+}
+
+.root a {
+  color: var(--purple-400);
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}

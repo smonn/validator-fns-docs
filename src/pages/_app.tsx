@@ -9,6 +9,7 @@ import { MDXProvider, MDXProviderComponents } from '@mdx-js/react';
 import App from 'next/app';
 import React from 'react';
 import Head from 'next/head';
+import Footer from '@/components/Footer';
 
 const components: MDXProviderComponents = {
   pre: (props) => <div {...props} />,
@@ -30,6 +31,7 @@ class MyApp extends App {
             <Component {...pageProps} />
           </main>
         </div>
+        <Footer />
       </MDXProvider>
     );
   }

@@ -1,8 +1,15 @@
 # Validation types
 
+- `array(config?, itemValidator, ...arrayValidators)`
+- `boolean(config?, ...validators)`
+- `date(config?, ...validators)`
+- `number(config?, ...validators)`
+- `object(schema)`
+- `string(config?, ...validators)`
+
 <section id="api-reference-validation-types-array">
 
-### array(config?, itemValidator, ...arrayValidators)
+## array(config?, itemValidator, ...arrayValidators)
 
 Casts value to an array, `null` or `undefined` if using the default array parser.
 
@@ -30,7 +37,7 @@ Casts value to an array, `null` or `undefined` if using the default array parser
 
 <section id="api-reference-validation-types-boolean">
 
-### boolean(config?, ...validators)
+## boolean(config?, ...validators)
 
 Casts value to a boolean, `null` or `undefined` if using the default boolean parser.
 
@@ -48,7 +55,7 @@ Casts value to a boolean, `null` or `undefined` if using the default boolean par
 
 <section id="api-reference-validation-types-date">
 
-### date(config?, ...validators)
+## date(config?, ...validators)
 
 Casts value to a date, `null` or `undefined` if using the default date parser.
 
@@ -71,7 +78,7 @@ Casts value to a date, `null` or `undefined` if using the default date parser.
 
 <section id="api-reference-validation-types-number">
 
-### number(config?, ...validators)
+## number(config?, ...validators)
 
 Casts value to a number, `null` or `undefined` if using the default number parser.
 
@@ -94,7 +101,7 @@ Casts value to a number, `null` or `undefined` if using the default number parse
 
 <section id="api-reference-validation-types-object">
 
-### object(schema)
+## object(schema)
 
 The only validation type that does not cast the entered value, meaning it does not use a parser. There's also no default fallback value option here. Instead, the schema is an object where its properties are validation types such as `string`, `array`, `number`, etc. Nested object validators are allowed, but not recommended due to their complexity and potential performance hit.
 
@@ -108,7 +115,7 @@ To use this with a library such as [Formik](https://formik.org/), you can use th
 
 <section id="api-reference-validation-types-string">
 
-### string(config?, ...validators)
+## string(config?, ...validators)
 
 Casts value to a string, `null` or `undefined` if using the default string parser.
 

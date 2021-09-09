@@ -1,8 +1,20 @@
 # Validation tests
 
+- `email(message)`
+- `exact(limit, message)`
+- `integer(message)`
+- `matches(pattern, message)`
+- `max(limit, message, exclusive?)`
+- `maxDate(limit, message, exclusive?)`
+- `min(limit, message, exclusive?)`
+- `minDate(limit, message, exclusive?)`
+- `oneOf(values, message)`
+- `required(message, nullable?)`
+- `url(message, protocols?)`
+
 <section id="api-reference-validation-tests-email">
 
-### email(message)
+## email(message)
 
 Ensures the value follows an email address format. Wraps the `matches` validation test. Only works with the `string` validation type.
 
@@ -12,7 +24,7 @@ Ensures the value follows an email address format. Wraps the `matches` validatio
 
 <section id="api-reference-validation-tests-exact">
 
-### exact(limit, message)
+## exact(limit, message)
 
 Ensures value is of an exact size. Works with `string`, `array`, and `number` validation types and verifies string length, array length, and numeric value respectively. An additional `amount` field representing the size is passed to the validation error message.
 
@@ -24,7 +36,7 @@ Ensures value is of an exact size. Works with `string`, `array`, and `number` va
 
 <section id="api-reference-validation-tests-integer">
 
-### integer(message)
+## integer(message)
 
 Ensures value is an integer number. Only works with the `number` validation type.
 
@@ -34,7 +46,7 @@ Ensures value is an integer number. Only works with the `number` validation type
 
 <section id="api-reference-validation-tests-matches">
 
-### matches(pattern, message)
+## matches(pattern, message)
 
 Ensures value matches the specified pattern. Only works with the `string` validation type.
 
@@ -46,7 +58,7 @@ Ensures value matches the specified pattern. Only works with the `string` valida
 
 <section id="api-reference-validation-tests-max">
 
-### max(limit, message, exclusive?)
+## max(limit, message, exclusive?)
 
 Ensures value is of at most a certain size. Works with `string`, `array`, and `number` validation types and verifies string length, array length, and numeric value respectively. An additional `amount` field representing the size is passed to the validation error message.
 
@@ -60,7 +72,7 @@ Ensures value is of at most a certain size. Works with `string`, `array`, and `n
 
 <section id="api-reference-validation-tests-max-date">
 
-### maxDate(limit, message, exclusive?)
+## maxDate(limit, message, exclusive?)
 
 Ensures value is on or before the specified date. Only works with the `date` validation type.
 
@@ -74,7 +86,7 @@ Ensures value is on or before the specified date. Only works with the `date` val
 
 <section id="api-reference-validation-tests-min">
 
-### min(limit, message, exclusive?)
+## min(limit, message, exclusive?)
 
 Ensures value is of at least a certain size. Works with `string`, `array`, and `number` validation types and verifies string length, array length, and numeric value respectively. An additional `amount` field representing the size is passed to the validation error message.
 
@@ -88,7 +100,7 @@ Ensures value is of at least a certain size. Works with `string`, `array`, and `
 
 <section id="api-reference-validation-tests-min-date">
 
-### minDate(limit, message, exclusive?)
+## minDate(limit, message, exclusive?)
 
 Ensures value is on or after the specified date. Only works with the `date` validation type.
 
@@ -102,7 +114,7 @@ Ensures value is on or after the specified date. Only works with the `date` vali
 
 <section id="api-reference-validation-tests-one-of">
 
-### oneOf(values, message)
+## oneOf(values, message)
 
 Ensures value is one of the provided values. Works with `string`, `date`, `number`, and `boolean` validation types.
 
@@ -114,7 +126,7 @@ Ensures value is one of the provided values. Works with `string`, `date`, `numbe
 
 <section id="api-reference-validation-tests-required">
 
-### required(message, nullable?)
+## required(message, nullable?)
 
 Ensures value is not one of: `undefined`, `null`, `NaN`, an empty string, or an invalid date. Works with all types.
 
@@ -126,7 +138,7 @@ Ensures value is not one of: `undefined`, `null`, `NaN`, an empty string, or an 
 
 <section id="api-reference-validation-tests-url">
 
-### url(message, protocols?)
+## url(message, protocols?)
 
 Ensures value is a valid URL. Only works with the `string` validation type.
 

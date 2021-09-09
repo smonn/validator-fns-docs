@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.root > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
